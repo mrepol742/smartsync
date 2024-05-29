@@ -1,0 +1,8 @@
+{
+    "name": "pinoyremix/pinoyremix",
+    "type": "project",
+    "description": "",
+    "require": {
+        "components/font-awesome": "^6.5"
+    }
+}
