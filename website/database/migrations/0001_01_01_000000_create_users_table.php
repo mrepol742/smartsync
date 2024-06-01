@@ -14,17 +14,28 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('fullname');
-            // form, google, etc..
-            $table->string('login_method')->nullable();
-            // active, deactivated
-            $table->string('status')->nullable();
-            // user, developer, admin
-            $table->string('type')->nullable();
             $table->string('username')->unique();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->timestamps();
+        });
+
+        Schema::create('carts', function (Blueprint $table) {
+            $table->id();
+            $table->string('user_id');
+            $table->timestamps();
+        });
+
+        Schema::create('payment_methods', function (Blueprint $table) {
+            $table->id();
+            $table->string('user_id');
+            $table->string('cart_id');
+            $table->string('address');
+            $table->string('card');
+            $table->string('expiry');
+            $table->string('cvv');
             $table->timestamps();
         });
 
@@ -50,6 +61,8 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('users');
+        Schema::dropIfExists('carts');
+        Schema::dropIfExists('payment_methods');
         Schema::dropIfExists('password_reset_tokens');
         Schema::dropIfExists('sessions');
     }

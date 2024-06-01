@@ -11,3 +11,21 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+.highlight {
+  background-color: transparent !important;
+  backdrop-filter: blur(3px);
+}
+
+.bg-custom {
+  background-color: #FF3131;
+}
+
+.text-custom {
+  color: #FF3131;
+}
+
+.card-custom {
+  margin: 0 auto;
+  float: none;
+}

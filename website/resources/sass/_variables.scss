@@ -1,10 +1,10 @@
-$dark: #2e424d;
+$dark: #212121;
 $white: #fff;
 
 // text-color
-$body-color: $dark;
+$body-color: $white;
 // background color
-$body-bg: #eaebed;
+$body-bg: $dark;
 
 $navbar-light-color: $white;
 $navbar-light-icon-color: $white;
@@ -13,26 +13,10 @@ $navbar-light-toggler-border-color: none;
 $navbar-toggler-focus-width: 1px;
 $navbar-toggler-padding-x: .5rem;
 
-$accordion-button-active-bg: $dark;
-$accordion-button-active-color: $body-bg;
-$accordion-border-color: $dark;
-
-$input-group-addon-bg: $dark;
-$input-group-addon-color: $dark;
-$input-group-addon-border-color: red;
-
-$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill='#2e424d' d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/></svg>");
-$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill='#fff' d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/></svg>");
-
-$navbar-light-hover-color: rgba($white, .75);
-
 $theme-colors: (
     "primary": $dark,
     "secondary": $dark,
-    "success": pink,
-    "info": pink,
-    "warning": pink,
-    "danger": pink,
+    "danger": #FF3131,
     "light": $body-bg,
     "dark": $dark,
 );
