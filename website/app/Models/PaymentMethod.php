@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class PaymentMethod extends Authenticatable
+class PaymentMethod extends SmartSync
 {
 
     protected $fillable = [
