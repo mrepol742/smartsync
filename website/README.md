@@ -1,5 +1,7 @@
 # smartsync
 
+<img src="Screenshot.png">
+
 ## Pre-requisites
 - Install XAMPP/LAMPP
 - Install Node.js v20.11+
@@ -13,7 +15,6 @@
   git clone https://github.com/<your-username>/smartsync
 
   _> using ssh
-  git clone git@github.com:<your-username>/smartsync
   ```
 - install dependecies
   ```
