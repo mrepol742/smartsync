@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SmartSync</string>
+    <string name="home">Home</string>
+    <string name="security">Security</string>
+    <string name="connection">Connection</string>
+    <string name="account">Account</string>
+    <string-array name="section">
+        <item>Kitchen</item>
+        <item>Living Room</item>
+        <item>Bed Room</item>
+        <item>Comfort Room</item>
+        <item>Garage</item>
+        <item>Exterior Lights</item>
+        <item>Garage</item>
+        <item>Add more option</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

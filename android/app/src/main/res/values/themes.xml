@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.SmartSync" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="Theme.SmartSync" parent="Base.Theme.SmartSync" />
+</resources>
