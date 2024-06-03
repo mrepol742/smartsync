@@ -5,6 +5,7 @@
     <string name="connection">Connection</string>
     <string name="account">Account</string>
     <string-array name="section">
+        <item>All Rooms</item>
         <item>Kitchen</item>
         <item>Living Room</item>
         <item>Bed Room</item>

@@ -25,12 +25,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*
-        String[] sections = getResources().getStringArray(R.array.section);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, R.layout.dropdown_item, sections);
-        AutoCompleteTextView autoCompleteTextView = findViewById(R.id.autoCompleteTextView);
-        autoCompleteTextView.setAdapter(arrayAdapter);
-         */
         navigationView = findViewById(R.id.navigation);
         navigationView.setOnItemSelectedListener(selectedListener);
 
@@ -39,32 +33,29 @@ public class MainActivity extends AppCompatActivity {
                 .commit();
     }
 
-    private final NavigationBarView.OnItemSelectedListener selectedListener = new NavigationBarView.OnItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-            int itemId = menuItem.getItemId();
-            if (itemId == R.id.nav_home) {
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.content, new Home(), "")
-                        .commit();
-                return true;
-            } else if (itemId == R.id.nav_security) {
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.content, new Security(), "")
-                        .commit();
-                return true;
-            } else if (itemId == R.id.nav_connection) {
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.content, new Connection(), "")
-                        .commit();
-                return true;
-            } else if (itemId == R.id.nav_account) {
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.content, new Account(), "")
-                        .commit();
-                return true;
-            }
-            throw new IllegalStateException("Unexpected value: " + menuItem.getItemId());
+    private final NavigationBarView.OnItemSelectedListener selectedListener = menuItem -> {
+        int itemId = menuItem.getItemId();
+        if (itemId == R.id.nav_home) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.content, new Home(), "")
+                    .commit();
+            return true;
+        } else if (itemId == R.id.nav_security) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.content, new Security(), "")
+                    .commit();
+            return true;
+        } else if (itemId == R.id.nav_connection) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.content, new Connection(), "")
+                    .commit();
+            return true;
+        } else if (itemId == R.id.nav_account) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.content, new Account(), "")
+                    .commit();
+            return true;
         }
+        throw new IllegalStateException("Unexpected value: " + menuItem.getItemId());
     };
 }
