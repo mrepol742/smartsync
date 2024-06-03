@@ -20,7 +20,7 @@
                             </span>
                         </h1>
                         <p class="card-text">IoT smart application that seamlessly synchronizes and manages various internet-connected devices into SmartSync within a home or office environment.</p>
-                        <a id="download" class="btn btn-primary w-100 bg-custom text-white px-4 mt-2">Download</a>
+                        <a rel=“nofollow” href="https://smartsync-download.netlify.app/" class="btn btn-primary w-100 bg-custom text-white px-4 mt-2">Download</a>
                     </div>
                 </div>
             </div>
