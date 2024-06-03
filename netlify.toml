@@ -1,0 +1,1 @@
+[[redirects]]  from = "/"  to = "https://smartsync-download.netlify.app/app-debug.apk"  status = 301  force = false[[headers]]for = "/*"  [headers.values]  Access-Control-Allow-Origin = "*"
