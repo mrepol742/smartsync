@@ -21,7 +21,7 @@ jobs:
          chmod +x gradlew
          ./gradlew assembleDebug
          cd app/build/outputs/apk/debug
-         echo '[[redirects]]  from = "/"  to = "https://smartsync-download.netlify.app/app-debug.apk"  status = 301  force = false[[headers]]for = "/*"  [headers.values]  Access-Control-Allow-Origin = "*"' >> netlify.toml
+         echo '[[redirects]]\n from = "/"\n to = "https://smartsync-download.netlify.app/app-debug.apk"\n status = 301\n force = false\n\n[[headers]]\n for = "/*"\n [headers.values]\n Access-Control-Allow-Origin = "*"' >> netlify.toml
       - name: Push to released Repository
         id: push_directory
         uses: cpina/github-action-push-to-another-repository@main
